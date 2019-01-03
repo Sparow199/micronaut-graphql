@@ -9,9 +9,10 @@ group "io.micronaut.example"
 version project.projectVersion
 
 repositories {
-    jcenter()
-    mavenCentral()
     mavenLocal()
+    mavenCentral()
+    jcenter()
+    maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
 }
 
 dependencyManagement {
